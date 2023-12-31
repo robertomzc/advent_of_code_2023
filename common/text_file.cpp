@@ -1,10 +1,10 @@
-#include "file.h"
+#include "text_file.h"
 #include <string>
 
-File::File(std::string file_path) : f(file_path) {
+TextFile::TextFile(std::string file_path) : f(file_path) {
 }
 
-std::string File::next() {
+std::string TextFile::next() {
     std::string line;
     if (std::getline(f, line)) {
         return line;

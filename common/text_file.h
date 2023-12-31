@@ -5,11 +5,11 @@
 using namespace std;
 
 
-class File {
+class TextFile {
 private:
     std::ifstream f;
 
 public:
-    explicit File(std::string file_path);
+    explicit TextFile(std::string file_path);
     std::string next();
 };

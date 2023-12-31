@@ -2,7 +2,7 @@
 #include <string>
 #include <map>
 #include <vector>
-#include "../../common/file.h"
+#include "../../common/text_file.h"
 
 using namespace std;
 
@@ -80,8 +80,8 @@ int extractLastDigit(string &line) {
 }
 
 int main() {
-    string f_path = "/home/rmartinezdelacruz/Code/personal/advent_of_code_2023/advent_of_code/day1/input";
-    File f(f_path);
+    string f_path = "/home/rmartinezdelacruz/Code/personal/advent_of_code_2023/days/day1/input1";
+    TextFile f(f_path);
     int cum_sum = 0;
 
     while (true) {
