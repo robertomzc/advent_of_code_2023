@@ -1,15 +1,18 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include <vector>
 
 using namespace std;
 
 
 class TextFile {
 private:
-    std::ifstream f;
+    ifstream f;
 
 public:
-    explicit TextFile(std::string file_path);
-    std::string next();
+    explicit TextFile(string file_path);
+    string next();
+    vector<string> read();
+    vector<string> readWithFrame(char c);
 };
