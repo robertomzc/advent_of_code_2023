@@ -9,4 +9,6 @@ add_executable(days/day1/day1Main.cpp
         common/text_file.cpp
         days/day2/day2Main.cpp
         common/pstring.cpp
-        common/pstring.h)
+        common/pstring.h
+        days/day3/day3Main.cpp
+        days/day4/day4Main.cpp)
